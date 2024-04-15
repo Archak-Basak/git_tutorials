@@ -1,0 +1,34 @@
+git branch workingcopy
+  555  git branch
+  556  git branch wk2
+  557  git branch
+  558  git checkout workingcopy
+  559  ls
+  560  git checkout main
+  561  ls
+  562  git checkout workingcopy
+  563  ls
+  564  touch c d e
+  565  ls
+  566  git diff
+  567  git add d e
+  568  git commit -m "branchcommit"
+  569  git push origin
+  570  git push origin workingcopy
+  571  git checkout main
+  572  git merge workingcopy
+  573  git push origin main
+  574  git branch sanwile
+  575  git sanwile
+  576  git branch
+  577  ls
+  578  git checkout sanwile
+  579  touch san1 san2 san3
+  580  git add .
+  581  git commit -m "sancommits"
+  582  ls
+  583  git push origin sanwile
+  584  git checkout main
+  585  git merge sanwile
+  586  git push origin main
+  587  history
