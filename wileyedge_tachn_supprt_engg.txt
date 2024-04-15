@@ -1,0 +1,329 @@
+
+Production Support Role - High Level
+1. 24*7 Production Envionment Support. 
+2. Proactive Monitoring & Alerting Automation.
+3.Investigating past Incidents
+4.Managing Release process of Software.
+5.Application Support.
+6.Database Support.
+7.Backup & Restoration.
+8.Root Cause Analysis & Permanent Fixes.
+9.Status Updates & Reporting
+10.Documentation.
+
+
+Summary - Role of Production Support
+1. Ensure systems & applications are running smoothly by monitoring & tracking alerts.
+2. Help resolve issues in production environments(Break-Fixes);
+3. Perform routine maintenance of systems to avoid breakdown.
+4. Perform testing to identify issues before applications are deployed to Production
+5. Help developers to identify improvements.
+6. Supporting customers by providing quality services & resolving issues faced by them quickly 
+7.Doing root cause analysis when issues occur to avoid recurrance of issuess in future.
+8.Supporting the databases where application related data is stored(includes backup & restoration).
+9.Write tachnical documentation, creating knowledge articles, runbooks, FAQs etc.
+
+What is Incident?
+An Incident is an unplanned interruption or a reduction in the quality of service. Potential disruption/Potential reduction of quality of services.
+
+Purpose of Incident Management: The purpose of incident management is to minimize the negative impact of incidents by restoring normal service operations quickly as possible.
+
+
+Triggers for Incident
+1.Proactive Monitoring Tools(1st line of defence).
+2.End users via Service Desk.
+3.Failed Changes/Releases
+4.Operational Issues(Bugs, Defects).
+
+
+Incident Workflow
+1.Incident Identification.
+2.logging.
+3.Categorization.
+4.Prioritization.
+5.Response.
+6.Diagnosis.
+7.Escalation.
+8.Resolution & Recovery.
+9.Closure.
+Urgency, Priority & Impact
+urgency => How quickly something needs to be done.
+Impact => The extent of user impact.
+Priority => Relative importance of something in comparison to others.
+Severity => The Degree of impact(How small or big the impact is)
+Major Incidents
+A major incident is a highest-impact, highest-urgency incident that affects many users, depriving the business of one or more crucial services.
+
+The goal of an organization is to have an effective & efficient system for responding to major incidents. The requirements are to minimize the impact of service interuptions.
+
+Ensure that stakeholders are well-informed of service interuptions, degradations, & resolutions.
+
+Ensure that an appropriate Incident Manager/Major Incident Team/Management Group are in place to manage a major incident.
+
+Conduct a review of each major incident once service is restored. Its purpose is to analyze the incident, & understand what can be done to prevent a similar incident in the future. This review also provides an opportunity to evaluate the incident responses process & identify areas for improvement.
+
+Create a problem for RootCause Analysis.
+
+
+- Problem Management -
+What is a Problem?
+	- A Cause or a potential cause of one or more incidents.
+	
+Purpose - The purpose of Problem Management is to reduced the likelihood & impact of incidents by identifying actual & potential causes of incidents & managing Workarounds & Known Errors.
+
+WORKAROUND:-
+A temporary solution that reduces or eliminates the impact of an incident or problem for which a full resolution is not yet available.
+Workarounds are used by both Problem & Incident Managements.
+Workarounds are generally 1st step towards problem resolution(not permanent fixes).
+
+KNOWN ERROR :-
+A problem that has been analyzed but not yet resolved/fixed.
+
+Why don't we fix Known Errors?
+	- Significant Cost Involved(not enough value received).
+	- Minor Issues(not worth bothering).
+	- Significant Design changes needed(can't be done for products already sold/need redesign).
+	- Not a priority(other things are taking precedence).
+	- Have a workaround which works as good as fix.
+	- Waiting for next release(will be fixed in future versions or updates).
+	
+Incident Vs. Problem
+	A Problen is one or more incidents with an unknown root cause, whereas incident arises as soon as something breaks or stops working disrupting normal service.
+	Incident management system aims at restoring services quickly whereas incident problem management aims at finding a permanent fix. 
+	
+	Problem Classification
+1. High Risk - An Incient or issue of such a severe potent
+ial that the organizations must take immediate steps to ensure there is no repeat of the issue or at least mitigate the effects of a possible future occurrence.
+
+2. High Visibility - An Incident of such nature that any recuurence of the incident will reflect poorly on the reputation of the organization. This is despite the low true impact of the incident.
+
+3. High Frequency - An Incident or issue which occurs frequently enough that regardless of individual incident impact, the issue warrants investigation & remediation.
+
+4. Cumulative Duration - Despite a lower severity than other issue & a lower frequency relative to other issues the overall time spent to resolve the issues of a particular type warrants investigation & remediation.
+
+- PROBLEM WORKFLOW -
+	1.Detection & Logging =>2
+	2.Categorization & Prioritization =>3
+	3.Investigation & Diagnosis =>4
+	4.Workarounds & Known Errors =>5
+	<=> Known Error Database 4
+	5.Resolution & Closure 
+	Major Problem Reviews =<4
+	Errors from Development/Suppliers =<5
+	
+Reactive Problem Management
+ y-axis : Service Level
+ x-axis : Time
+	1.Incident
+	2.Incident Mng.
+	3.Service restore
+	4.Problem Mng.
+		i.Additional sources of information
+		ii.Full or partial service restoration
+	5.RCA(Root Cause Analysis)
+	6.Problem Fix
+Proactive Problem Management
+ y-axis : Service Level
+ x-axis : Time
+ 	1.Data Input
+		i.Past incident analysis
+		ii.Industry information
+		iii.Vendor information
+		iv.Past problem analysis
+		v.Event monitoring & management
+		vi.Personal expertise & situational awareness
+	2.Problem Mng.
+		i.problem found
+		ii.RFC(Request for Change)
+	3.Problem Fix
+	
+Problem & Change Management
+	- If something isn't working it won't get fixed magically by itself, so we need to make changes 
+	- Changes can be submitted once we have identified a fix & the cost, benefit & risk of the change analysis is done & it is justified that a change is required.
+	
+What is Change?
+	- Change is any addition , modification or removal of anything thst could have a direct or indirect effect on services.
+	
+	Purpose - The purpose of Change Control is to maximize the number of successful IT changes by ensuring that risks have been assessed, authoring changes to proceed & managing a change schedule.
+	
+	TYPES OF CHANGES :-
+STANDARD => Low Risk, Low Cost, pre-defined, Fixed Scope 
+Ex. Weekly Reboot of a Server, Monthly Backup of a Server
+
+EMERGENCY => High Risk, Error Prone, Business Impacting, P1/P2 related generally, Should be kept minimum, > 24 hrs, <5% of your total
+Ex. Emergency restart of a Server to restore Services.
+
+NORMAL => Need to be scheduled, assessed, & authorized
+Ex. Monthly patching of a Server
+	
+Change Windows/Maintenance windows =>
+Change Windows are sometimes referred to as maintenance windows are set of predefined, regularly Scheduled block of time set aside to do maintenance activities & implement changes.
+Change Windows are usually identified based on when there will be minimal impact to customers.
+
+Change Freeze Peroid/Blackout Window =>
+Change Freeze Peroid/Blackout Window =>
+Change Freeze peroid or Blackout window is a peroid which no changes are allowed to either part of the infrestructure or all the infrastructure.
+	
+SERVICE REQUEST MANAGEMENT
+	What is a Service Request?
+	- A service request is a request from a user or user's authorized representative that initiates  a service action that has been agreed upon as a normal part of service delivery.
+ Examples :- Password Reset, Installation of Software, Printer Configuration, Request for access to a Shared Drive, Providing Access to New Hires, Outlook Configuration
+ 
+ 	Service Request Categories
+	- Request for a Service Delivery
+	- Request for information
+	- Request for provision of a resource or service
+	- Request for access to a resource or service
+	- Feedbacks, compliments, & complaints
+  
+   Service Request Phases
+   	- Initiation
+	- Approval
+	- Fulfillment
+	-----MANAGEMENT-----
+	
+	
+   Service Request Best-Practices
+   	- Service request may have simple or quite complex workflows.
+	- Steps to fulfill requests should be well-known & proven.
+	- Self-service & Automation should be leveraged as much as possible.
+	- Existing workflow models should be used whenever possible.
+	
+	
+	
+KNOWLEDGE MANAGEMENT
+	Knowledge management is the process of creating, using, sharing, & maintaining organizational knowledge so that business users can use it whenever needed.
+	
+KNOWLEDGE MANAGEMENT DATABASE
+	A central repository or a database where all knowledge is stored in the form of Knowledge Articles.
+	
+	
+	DIKW Model
+	
+	Data -> Information -> Knowledge - Wisdow
+	
+ Types of Knowledge
+ 	- Tacit knowlegde represents an intuitive kind of know-how deeply rooted in a personal experience.
+	Ex.: Expertise, Ideas, Skills, Insights, Individual Skills, Education, Cultural beliefs, Intuition, Observations, Values, Attitudes, Mental models.
+	- Explicit Knowlegde refers to a formalized knowlegde that is stored in a designated place.
+	Ex.: Manuals, How-to guides, Memos, Documents, Videos, News, Procedures, Databases, Records.
+	
+ Benefits of Knowledge Management ==>>
+  - Reduces the amount of time must be spent on training employees. Since your team will consistently receive precise & up-to-date information, they will require fewer formal training to meet the performance expectations.
+  - Decreases the number of errors that are made by team members. If your team has the adequate source of knowledge that is needed to take formal decisions, then they are far less likely to go outsise the track.
+  - Implementation of the ITIL Knowledge Management process cuts down the effort to complete any steps of service process more than once. When everyone has process awareness, it is less likely that a known step will be performed incorrectly.
+  - Availability of instant knowledge allows IT professionals to respond to sustomer demands faster & more effectively. Your employees will know the way to answer customer questions more effectively, thus reducing the number of times you have to intervene or respond to negative feedback about the lack of knowledge of you about the lack of knowlwdge of your team members.
+  - The relevent part of knowledge stored in the SKMS can be made available to the end user by creating a user portal. Thus creating a self-service desk portal for common users. This can significantly decrease the pessure on the service desk associates, which will eventually increase the quality of service.
+  
+
+SERVICE LEVEL MANAGEMENT
+	PURPOSE
+	- The purpose of the service-level management practice is to set clear business-based targets for service performance so that the delivery of a service can be properly assessed , monitored, & managed against these targets.
+	
+	- SLA: A service Level Agreement is a document agreement between a ervice provider & a customer that identifies the services required & the expected level of service.
+	
+	SLA GOAL
+	- The goal for SLM is to maintain & improve IT Service quality through a constant cycle of negotiating, agreeing, monitoring, & reviewing reporting upon IT Service achievements & instigation of actions to eradicate poor service-in-line with business or cost justification.
+	- Through these methods, IT & its customers can develop a better relationship.
+	
+	SLA Activities
+	- Negotiating the Service Levels with the customer & Service Provider.
+	- Defining Service Levels(99.99% availability).
+	- Documenting the Service Level(as per the SLA).
+	- Agreeing the Service Levels by signing the SLA.
+	- Monitoring the Service Levels to ensure compliance with agreement(governance).
+	- Performing Performing Service reviews from time to time(internal & with customers).
+	- Capturing & Reporting Service performance.
+	- Creating SLA, Service reviews reports.
+	- Identifying areas of improvement of services using SLA data.
+	- Termination of SLAs if agreement is breached.
+	- Enforcing penalties if SLA breach is identified.
+	
+ WATERMELON EFFECT
+ 
+ SLA, OLA & UC
+  customer -> SLA -> Service Provider -> OLA 1-> Internal Organization
+  							          -> UC 2-> Vendor/Supplier
+	: SLA - Service Level Agreement
+	  OLA - Organization Level Agreement
+	  UC - Underpinning Contract
+	  
+ Monitoring & Event Management
+  Purpose
+  	- To systematically observes services & service components & record & report selected changes of state identified as events.
+  Event
+  	- An event can be defined as any change of state that has significancwe for the management of a configuration item(CI) or IT service.
+	
+	TYPES OF EVENTS
+		Event => Filter => 1. Exception, 2. Warning, 3. Information
+		
+	Informational
+		- These are generated purely for informational purposes & generally, denote successful completion of a task. These are type of event that does not require any immediate action & does not represent an exception. These are stored in the log files for a predetermined period.
+	
+	Warning
+		- This type of event is generated when a device or service is reaching a threshold limit. This type of warning is intended to notify the appropriate team or tool to take necessary actions to prevent an exception from occuring.
+		
+	Exception
+		- It signifies that a threshold limit for a service or component performance is breached. This Exception/Error means that the service or component is experiencing a failure, performance degradations, or loss of functionally, & impacting the business operation.
+		
+ Objectives & Purpose of Monitoring & Event Management
+ 	- The primarily objective of the ITIL Monitoring & Event Management Process is to ensure that the Configuration Items(CIs) & services are constantly monitored.
+	- This process aims to filter & categorize Eventa ao that appropriate actions can be taken if required.
+	- Detect & investigate any change of state that has significance for the management of a CI or IT services.
+	- Provide a means for early detection of incidents.
+	- Decide the appropriate actions for events & ensure these are communicated to the appropriate functions.
+	- Provide a mechenism to compare actual operating performance against design standards & SLAs.
+	- Provide a basis for service assurance, reporting & service improvement.
+	
+ Scope of Monitoring 7 Event Management
+ 	- The scope if Event Management covers aspect of service management that can be automated & required to be controlled.
+	- These include:
+		-- Configuration Items:- Includes CIs that need to be continuously monitored to identify any status change
+		-- Environmental conditions
+		-- Software license:- monitor the usage to ensure optimum/legal license allocation & utilization.
+		-- Security
+		-- Normal activity & informational events.
+		
+
+IT ASSET MANAGEMENT
+	- An IT Asset is any valuable component that can contribute to the delivery of an IT product or service.
+	
+	Purpose
+		- The purpose of IT Asset Management is to plan 7 manage the full lifecycle of an IT Asset to help the organization.
+		
+	Purpose of IT Asset Management
+		- Maximize value
+		- Cost control
+		- Manage risks
+		- Supports decision-making about purpose, resuse, & retirement of assets.
+		- Meet regulatory & contractual requirements.
+
+ IT Assets Lifecycle
+ 	PLAN
+		- The strategy & decisions about what assets are needed within the organization, how to procure them, how they will be used, & how they will be funded. Planning often includes TCO & Cost/Benefit Analysis of alternatives.
+	
+	ACQUIRE
+		- The procurement of assets through building, buying, leasing or licensing them.
+	
+	COMMISSION
+		- Introducing the asset into the IT ecosystem. This includes installation, integrating with other components, establishing operations/support process, & provising user access.
+	
+	MAINTAIN
+		- As the asset is being operated & used, maintenance, repair, upgrades & overhauls may be necessary to maximize value to users, extend the useful life of the asset, mitigate risks 7 reduce support costs.
+		
+	RETIRE
+		- At the end of an asset's useful life, the asset must be disposed or otherwise dispositioned. Retirement often includes transitioning users to other resources, updating asset records, canceling support agreements, terminating license renewals, & initiating the planning for replacement assets.
+		
+	
+TYPES OF IT ASSET MANAGEMENT
+	IT Asset Management
+		- It is the overaching set of business practices that join financial, contractual, & inventory functions to support lifecycle management & strategic decision-making for the IT environment. ITAM is part of a company's IT Service Management function.
+		
+	Digital Asset Management
+		- It is a part of the company's intellectual property management functions & is a form of electronic media content management concerned with managing digital assets such as photos, videos, & digital data that the company either produces or licenses from third parties.
+		
+	Software Asset Management & License Management
+		- These are concerned with effectively managing, controlling, & protecting software assets. This includes those produced by the company & those by 3rd party to ensure that all software in use within the organization is properly paid for & in compliance with licensing agreements.
+		
+		
+		
