@@ -2,13 +2,13 @@
 Production Support Role - High Level
 1. 24*7 Production Envionment Support. 
 2. Proactive Monitoring & Alerting Automation.
-3.Investigating past Incidents
-4.Managing Release process of Software.
-5.Application Support.
-6.Database Support.
-7.Backup & Restoration.
-8.Root Cause Analysis & Permanent Fixes.
-9.Status Updates & Reporting
+3. Investigating past Incidents
+4. Managing Release process of Software.
+5. Application Support.
+6. Database Support.
+7. Backup & Restoration.
+8. Root Cause Analysis & Permanent Fixes.
+9. Status Updates & Reporting
 10.Documentation.
 
 
@@ -19,9 +19,9 @@ Summary - Role of Production Support
 4. Perform testing to identify issues before applications are deployed to Production
 5. Help developers to identify improvements.
 6. Supporting customers by providing quality services & resolving issues faced by them quickly 
-7.Doing root cause analysis when issues occur to avoid recurrance of issuess in future.
-8.Supporting the databases where application related data is stored(includes backup & restoration).
-9.Write tachnical documentation, creating knowledge articles, runbooks, FAQs etc.
+7. Doing root cause analysis when issues occur to avoid recurrance of issuess in future.
+8. Supporting the databases where application related data is stored(includes backup & restoration).
+9. Write technical documentation, creating knowledge articles, runbooks, FAQs etc.
 
 What is Incident?
 An Incident is an unplanned interruption or a reduction in the quality of service. Potential disruption/Potential reduction of quality of services.
@@ -51,6 +51,7 @@ urgency => How quickly something needs to be done.
 Impact => The extent of user impact.
 Priority => Relative importance of something in comparison to others.
 Severity => The Degree of impact(How small or big the impact is)
+
 Major Incidents
 A major incident is a highest-impact, highest-urgency incident that affects many users, depriving the business of one or more crucial services.
 
@@ -132,7 +133,7 @@ Proactive Problem Management
 		iv.Past problem analysis
 		v.Event monitoring & management
 		vi.Personal expertise & situational awareness
-	2.Problem Mng.
+	2.Problem Management
 		i.problem found
 		ii.RFC(Request for Change)
 	3.Problem Fix
@@ -275,7 +276,7 @@ SERVICE LEVEL MANAGEMENT
 	- Provide a mechenism to compare actual operating performance against design standards & SLAs.
 	- Provide a basis for service assurance, reporting & service improvement.
 	
- Scope of Monitoring 7 Event Management
+ Scope of Monitoring & Event Management
  	- The scope if Event Management covers aspect of service management that can be automated & required to be controlled.
 	- These include:
 		-- Configuration Items:- Includes CIs that need to be continuously monitored to identify any status change
@@ -289,7 +290,7 @@ IT ASSET MANAGEMENT
 	- An IT Asset is any valuable component that can contribute to the delivery of an IT product or service.
 	
 	Purpose
-		- The purpose of IT Asset Management is to plan 7 manage the full lifecycle of an IT Asset to help the organization.
+		- The purpose of IT Asset Management is to plan & manage the full lifecycle of an IT Asset to help the organization.
 		
 	Purpose of IT Asset Management
 		- Maximize value
@@ -317,7 +318,7 @@ IT ASSET MANAGEMENT
 	
 TYPES OF IT ASSET MANAGEMENT
 	IT Asset Management
-		- It is the overaching set of business practices that join financial, contractual, & inventory functions to support lifecycle management & strategic decision-making for the IT environment. ITAM is part of a company's IT Service Management function.
+		- It is the overaching set of business practices that join financial, contractual, & inventory functions to support lifecycle management & strategic decision-making for the IT environment. ITSM is part of a company's IT Service Management function.
 		
 	Digital Asset Management
 		- It is a part of the company's intellectual property management functions & is a form of electronic media content management concerned with managing digital assets such as photos, videos, & digital data that the company either produces or licenses from third parties.
@@ -325,5 +326,201 @@ TYPES OF IT ASSET MANAGEMENT
 	Software Asset Management & License Management
 		- These are concerned with effectively managing, controlling, & protecting software assets. This includes those produced by the company & those by 3rd party to ensure that all software in use within the organization is properly paid for & in compliance with licensing agreements.
 		
+ HOW WILL ASSET TRACKING IMPACT YOUR IT CAREER?
+ 	- Comprehensive Directory of all IT Assets
+	- Check Items In & Out (Know where the item is at any given time)
+	- Track Items(Look up a complete history of an asset/track vendors & service providers)
+	- Schedule Maintenance(& notify techs of lease expirations)
+	
+CONFIGURATION MANAGEMENT
+	Purpose
+	- To ensure the accurate & reliable information about the configuration of services, & the CIs that support them, is available when & where it is needed.
+	Confiration Items
+	- Any component that needs to be managed in order to deliver an IT service.
+	
+What is CI?
+Configuration Items:Examples of common CIs
+@ Servives - Email, printing, collaboration, presentation,  data processing, user registration
+@ Software - Applications, databases, Virtual machines, containers, licenses
+@ Hardware - Servers, routers, computers, switches, printers
+@ Devices - Laptops, tablets, smartphones, monitors, keyboards, mice
+@ Documents - Policies, governance, release notes, user guides, troubleshooting manuals
+@ Locations - Offices, data centers, server rooms
+@ Staff - Service desk agents, support specialists, developers
+
+
+Asset vs. CI
+- An IT Asset is any valuable component that can contribute to the delivery of an IT product or service.
+- A CI is any component that needs to be managed in order to deliver an IT service.
+- All CIs are assets, however, not all assets are CIs.
+- Configuration items have an elwment of control required to deliver services, & this is not usually a preserve fot all assets.
+- So, for example, knowledge or furniture can be classified as assets for your company. But they are not CIs, as they are not controlled for purposes of delivering services.
+
+Asset Management                  
+	- Deals with the financial aspects of objects/assets.
+	- A process that manages the assets throughout their lifecycle.
+	- Integrated with procurement system.
+	- Focused towards the IT corporate crowd.
+	- The primary user is the asset manager.
+Configuration Management Database(CMDB)
+    - Overseas the Management of the configuration items.
+    - A tool that stores all information related to the CIs in one place.
+	- Integrated with change management system.
+	- Focused towards the business service crowd.
+	- The primary user is the IT technician/analyst.
+	
+CI Relationships
+	- Any change in configurations can dramatically impact the performance, security, & functionality of the code & the underlying IT assets.
+	
+ RELEASE MANAGEMENT
+ 	Purpose
+		- The purpose of the release management practice is to make new & changed services & features available
+for use.
+	Release
+		 - A version of a service or other configuration item, or a collecction of configuration items, that is made available for use.
+		 
+What is a Release?
+	- As defined inITIL, a release(also known as release package) is a set of authorized changes to an IT service or component.That means a release may include hardware, software, processes, documentation, or any other components that are necessary to successfully important an approved changes to your IT services.
+	
+Why Do We Need Release Management?
+	- Your customers expact valuable services -- & they expect them without disruption. That makes it critical that every single release be built, tested, & delivered following a rigorous process that ensures quality & minimizes risk.
+	- ITIL's Release & Deployment Management phase is designed for exactly that: ensuring that your releases are deployed into production efficiently & effectively.
+	
+OBJECTIVES OF RELEASE MANAGEMENT
+	The primary objective of the ITIL Release & Deployment Management Process is to plan, schedule, & control the release & deployment of IT Services, & updates, to the production enviroment. It also ensures the integrity of the production enviroment by rolling out only sufficiently tested services & components.
+	
+Some other important objectives of Release Management are as follows:
+	- Ensures faster delivery of changed services at an optimum cost
+	- reduces the risk by ensuring that only authorized releases are deployed
+	- Successfully & on-schedule deployment of the release package
+	- Ensures that the New or changed services can meet the agreed services requirements
+	- Deploying new services with minimal effect on live production processes
+	- Ensures proper knowledge Transfer to Users, Operations, & Support Staff
+	
+SCOPE
+	Some of most important CIs that are included in the scope are:
+	- Virtual & physical assets.
+	- Applications & software.
+	- Training for staff 7 users.
+	- All related contracts & agreements.
+
+TYPES OF RELEASE
+	ITIL Release
+		1. Major Release : This is such a revision, that contain new hardware or software component. Generally, a major release is meant to introduce completely new functionality. These are identified by the first whole number in the version number string, such as v1.0, v2.0 etc.
+		2. Minor Release : It is the means of marking significant changes/improvements to existing functionality. The minor release often contains several numbers of fixes, packaed together in one release package. The minor releases are typically denoted as the digits after the 1st decimal point, such as, v1.1, v1.2 etc.
+		
+		3. Emergency Release : As the words mean, it is the release to fix some bugs that need immediate attention. These often released as a temporary fix until the next major releases. Emergency releases are typically denoted by the numbers written after the 2nd decimal point, such as, v1.2.1, v3,6,9, etc.
+		
+APPROACHES FOR RELEASE MANAGEMENT
+ Release & Deploy Management
+	- Big Bang : 
+		- In this approach, the new or changed service is deployed to all user areas at a single time.
+		- This approach is used at the time of introducing a very critical application change & when the consistency of service accross the organization is of utmost important.
+		- The negative side of the Big Bang approach is that it increases the risk & impact associated with a failed Release.
+		-Ex: Deploying Emergency Security Patch to all the systems at one go to fix a critical vulnerability in the system.
+		
+	- Phased :
+		- In this approach, services are initially deployed to a part of the user base, & if no issue observed, then the deployment is repeated for subsequent parts of the user base via a scheduled rollout plan.
+		- Some scenarios such as installing new applications that take this approach to minimize the impact on current operation.
+		- This is the most used deployment approach under ITIL release & deployment management process.
+		-Ex: Deploying updated MS Office in various phases, first to HR, then to Finance & so on.
+		
+	- Push : 
+		- This approach is used where the service component is deployed from a central location & pushed out to the target locations at a predefined time.
+		- In terms of service deployment, it delivers updated service components to all users, either at the same time or in phases.
+		- OS patch deployment through inventory management system within an organization is an example of this.
+		-Ex:Security Patches are pushed to user's system; users have no choice to decline.
+		
+	
+	- Pull :
+		- This approach is used for software releases where the software is made available in a central location, & users are invited to pull the software down to their own location at their convenience.
+		- Ex: Anew version of a software is made available; the user has a choice to download or ignore it.
+		
+	- Automated :
+		- This deployment management approach utilizes the technology to automate releases.
+		- This helps to ensure reputability & consistency.
+		-Ex: Windows update releases or antivirus definition updates are deployed through an automated approach.
+		
+	- Manual : NIL
+	
+
+Release Management Process
+	1- Start (RFD & FSC Approval)
+	2- Plan Release (Release Plan Review) linked to 5 & 6
+	3- Build Release (Test Plan Approval) linked to 4
+	4- Test user Acceptance (Test Results Review)
+	5- Prepare Release (Implementation Plan Approval)
+	6- Deploy Release (Deployment completed successfully)
+	7- End
+
+DEPLOYMENT MANAGEMENT
+	Pupose
+		- To move new or changed hardware, software, documentation, process, or any other component to live environments for testing or staging.
 		
 		
+	CSMA/CD is one such technique where different stations that follow this protocol agree on some terms and collision detection measures for effective transmission.
+	
+Hub: 
+	-A hub is a basic networking device that connects multiple Ethernet devices in a network. 
+	-It operates at the physical layer of the OSI model and simply broadcasts data to all devices connected to it. 	   -Hubs are now mostly obsolete and have been replaced by switches, which are more efficient in managing network traffic.
+
+Switch: 
+	-A switch is a more advanced networking device that operates at the data link layer of the OSI model. 
+	-It connects multiple devices in a network and selectively forwards data packets to the device for which they are intended. 
+	-It use MAC addresses to determine the destination of each packet, allowing for more efficient use of bandwidth compared to hubs.
+
+Repeater: 
+	-A repeater is a networking device that regenerates or amplifies signals to extend the reach of a network. 
+	-It operates at the physical layer of the OSI model and is used to counteract signal degradation over long distances or due to interference. 
+	-Repeaters simply replicate the signal they receive and transmit it to the next segment of the network.
+
+Router: 
+	-A router is a networking device that connects multiple networks together and forwards data packets between them. 
+	-It operates at the network layer of the OSI model and uses IP addresses to determine the best path for forwarding packets. 
+	-Routers are essential for connecting devices across different networks, such as connecting a local network to the internet.
+
+Bridge: 
+	-A bridge is a networking device that connects multiple network segments together and forwards traffic between them. 
+	-It operates at the data link layer of the OSI model and uses MAC addresses to determine which segment to forward a packet to. 
+	-Bridges are typically used to divide large networks into smaller, more manageable segments or to connect different types of network technologies.
+
+Gateway: 
+	-A gateway is a networking device that serves as an entry and exit point for data entering or leaving a network. 
+	-It can perform protocol translation, data formatting, or other functions necessary to facilitate communication between different networks or between a network and external systems, such as the internet. 
+	-Gateways often combine the functions of routers, bridges, and other devices to provide comprehensive 
+	connectivity services.
+	
+	
+ Various Topologies
+ 	1.Point-to-point topology
+		-Direct connection between two devices.
+		-Simplest form of network topology.
+		-Used in WAN connections, such as leased lines.
+	2.Bus Topology
+		-All devices connected to a single backbone cable.
+		-Easy to install and inexpensive.
+		-Susceptible to cable failures and network traffic congestion.
+	3.Star Topology
+		-All devices connected to a central hub or switch.
+		-Easy to install and troubleshoot.
+		-Failure of a single connection does not affect other devices.
+	4.Ring Topology
+		-Each device is connected to two other devices, forming a closed loop.
+		-Data travels in one direction around the ring.
+		-Susceptible to failure if one device or connection fails.
+	5.Mesh Topology
+		-Every device is connected to every other device in the network.
+		-High redundancy and fault tolerance.
+		-Costly and complex to implement due to a large number of connections.
+	6.Tree Topology
+		-Hierarchical structure with multiple levels.
+		-Combination of star and bus topologies.
+		-Centralized control but susceptible to failure of the root node.
+	7.Daisy-chain Topology
+		-Devices are connected in series, one after the other.
+		-Simple and inexpensive.
+		-Failure of one device affects the entire chain.
+	8.Hybrid Topology
+		-Combination of two or more different topologies.
+		-Offers flexibility and scalability.
+		-Complex to design and manage compared to individual topologies.
