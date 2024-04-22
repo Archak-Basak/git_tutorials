@@ -1,0 +1,102 @@
+OSI and TCP/IP Models : Brief Overview
+
+The OSI (Open Systems Interconnection) model and the TCP/IP (Transmission Control Protocol/Internet Protocol) model are two fundamental frameworks used to conceptualize and understand how communication occurs in computer networks.
+
+OSI Model:
+    - The OSI model, developed by the International Organization for Standardization (ISO), is a conceptual framework consisting of seven layers. Each layer serves a specific function in the process of transmitting data between devices. The layers of the OSI model, from bottom to top, are:
+
+These are as follows :
+1.Physical Layer:
+    This layer deals with the physical connection between devices and the transmission of raw data over physical mediums, such as cables or wireless signals.
+
+2.Data Link Layer:
+    Responsible for the reliable transmission of data across a physical link. It handles issues such as framing, error detection, and flow control.
+
+3.Network Layer:
+    Focuses on the routing and forwarding of data packets between different networks. It establishes logical paths, known as routes, for data to travel from the source to the destination.
+
+4.Transport Layer:
+    Manages end-to-end communication between devices. It ensures that data is delivered reliably and in the correct order, providing error detection and correction as needed.
+
+5.Session Layer:
+    Establishes, manages, and terminates sessions between applications. It handles synchronization, checkpointing, and recovery functions to facilitate communication between endpoints.
+
+6.Presentation Layer:
+    Responsible for data translation, encryption, and compression. It ensures that data sent by the application layer is formatted and presented appropriately for transmission over the network.
+
+7.Application Layer:
+    The topmost layer of the OSI model, it provides network services directly to end-users and application processes. This layer includes protocols such as HTTP, FTP, SMTP, and DNS.
+
+TCP/IP Model:
+    - The TCP/IP model, developed by the Department of Defense (DoD), is the foundational networking protocol suite used for communication over the Internet. It consists of four layers, which are often compared to, but not directly aligned with, the OSI model.
+The layers of the TCP/IP model are:
+
+1.Network Interface Layer (or Link Layer):
+    Equivalent to the combination of the OSI model's Physical and Data Link layers. It deals with the physical connection to the network and the transmission of data frames.
+
+2.Internet Layer:
+    Equivalent to the OSI model's Network Layer. It handles the routing of packets across interconnected networks and is responsible for logical addressing (IP addressing).
+
+3.Transport Layer:
+    Equivalent to the OSI model's Transport Layer. It provides communication services between devices on a network, ensuring reliable and ordered delivery of data. The primary protocols at this layer are TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+
+4.Application Layer:
+    Similar to the OSI model's top three layers (Session, Presentation, and Application layers) combined. It includes protocols and services that directly interact with end-users, such as HTTP, FTP, SMTP, and DNS.
+
+
+
+# OSI model provides a more comprehensive and theoretical framework for understanding network communication, whereas, TCP/IP model is widely used in practice, especially in the context of the Internet and modern networking environments.
+
+
+UDP (User Datagram Protocol): A Brief Overview
+
+ *UDP (User Datagram Protocol) is a connectionless, unreliable transport layer protocol in the TCP/IP suite. Unlike TCP, which provides reliable, ordered, and error-checked delivery of data, UDP offers a simpler, low-overhead communication mechanism.
+
+
+How UDP Works:
+ It works basically in the following ways:
+* Connectionless Communication:
+    UDP operates without establishing a connection between the sender and receiver. This means that each UDP datagram (packet) is sent independently, without any acknowledgment or guarantee of delivery.
+* Unreliable Delivery:
+    UDP does not include mechanisms for error detection, correction, or retransmission. If a UDP packet is lost or corrupted during transmission, it is not retransmitted, and there is no notification to the sender or receiver.
+* Minimal Overhead:
+    UDP has minimal overhead compared to TCP since it does not require the establishment and maintenance of connections, sequence numbers, or acknowledgment mechanisms. This makes UDP faster and more efficient for certain types of applications.
+
+Examples of UDP Usage:
+    *Real-Time Multimedia Streaming
+    *Online Gaming
+    *DNS (Domain Name System)
+    *Network Monitoring and Management
+    *Voice over IP (VoIP)
+
+It provides a lightweight, fast, and efficient communication method for applications where real-time delivery is prioritized over reliability.
+
+
+TCP (Transmission Control Protocol) - A Brief Overview and Working
+
+TCP (Transmission Control Protocol) is one of the core protocols of the Internet Protocol Suite (TCP/IP). It operates at the transport layer of the OSI model and provides reliable, connection-oriented communication between devices over IP networks. TCP ensures that data packets are delivered in the correct order, without errors, and with congestion control.
+
+Working of TCP:
+
+1. Connection Establishment:
+    * TCP uses a three-way handshake mechanism to establish a connection between the sender and receiver.
+    * The process involves the sender (client) sending a SYN (synchronize) packet to the receiver (server), indicating its intent to establish a connection.
+    * The receiver responds with a SYN-ACK (synchronize-acknowledgment) packet, acknowledging the request and indicating its readiness to establish a connection.
+    * Finally, the sender acknowledges the receiver's response by sending an ACK packet, completing the connection establishment process.
+2. Data Transfer:
+    * Once the connection is established, data transfer begins. TCP segments the data into manageable chunks called segments and assigns sequence numbers to each segment to maintain proper order.
+    * The sender sends the segments to the receiver, which acknowledges their receipt. If a segment is lost or corrupted during transmission, the receiver requests retransmission from the sender.
+    * TCP also performs flow control to prevent overwhelming the receiver by adjusting the rate of data transmission based on available buffer space.
+3. Connection Termination:
+    * When the data transfer is complete, TCP terminates the connection using a four-way handshake.
+    * The sender sends a FIN (finish) packet to initiate the termination process.
+    * The receiver acknowledges the FIN packet with an ACK.
+    * The receiver then sends its own FIN packet to indicate its readiness to close the connection.
+    * Finally, the sender acknowledges the receiver's FIN, and the connection is terminated.
+
+Examples of TCP Usage:
+    * Web Browsing
+    * File Transfer
+    * Email Communication
+
+It plays a vital role in ensuring reliable, ordered, and error-free communication over IP networks.
