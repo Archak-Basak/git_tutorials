@@ -1,0 +1,69 @@
+OSI Model:
+
+Physical Layer (Layer 1):
+    Ethernet
+    Wi-Fi (802.11)
+    Fiber optic cables
+    DSL (Digital Subscriber Line)
+
+Data Link Layer (Layer 2):
+    Ethernet (IEEE 802.3)
+    IEEE 802.11 (Wi-Fi)
+    Point-to-Point Protocol (PPP)
+    Address Resolution Protocol (ARP)
+
+Network Layer (Layer 3):
+    Internet Protocol (IP)
+    Internet Control Message Protocol (ICMP)
+    Routing protocols (e.g., Routing Information Protocol (RIP), Open Shortest Path First (OSPF))
+    IPsec (IP Security)
+
+Transport Layer (Layer 4):
+    Transmission Control Protocol (TCP)
+    User Datagram Protocol (UDP)
+    Stream Control Transmission Protocol (SCTP)
+    Multipurpose Internet Mail Extensions (MIME)
+
+Session Layer (Layer 5):
+    Remote Procedure Call (RPC)
+    NetBIOS (Network Basic Input/Output System)
+    Session Initiation Protocol (SIP)
+    AppleTalk Session Protocol (ASP)
+
+Presentation Layer (Layer 6):
+    Secure Sockets Layer (SSL)
+    Transport Layer Security (TLS)
+    ASCII (American Standard Code for Information Interchange)
+    JPEG (Joint Photographic Experts Group)
+
+Application Layer (Layer 7):
+    Hypertext Transfer Protocol (HTTP)
+    File Transfer Protocol (FTP)
+    Simple Mail Transfer Protocol (SMTP)
+    Domain Name System (DNS)
+
+TCP/IP Model:
+
+Network Interface Layer (or Link Layer):
+    Ethernet
+    Wi-Fi (802.11)
+    Point-to-Point Protocol (PPP)
+    Asynchronous Transfer Mode (ATM)
+
+Internet/Network Layer:
+    Internet Protocol (IP)
+    Internet Control Message Protocol (ICMP)
+    Address Resolution Protocol (ARP)
+    Internet Group Management Protocol (IGMP)
+
+Transport Layer:
+    Transmission Control Protocol (TCP)
+    User Datagram Protocol (UDP)
+    Datagram Congestion Control Protocol (DCCP)
+    Stream Control Transmission Protocol (SCTP)
+
+Application Layer:
+    Hypertext Transfer Protocol (HTTP)
+    File Transfer Protocol (FTP)
+    Simple Mail Transfer Protocol (SMTP)
+    Domain Name System (DNS)
