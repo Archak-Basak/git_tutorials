@@ -100,3 +100,7 @@ Examples of TCP Usage:
     * Email Communication
 
 It plays a vital role in ensuring reliable, ordered, and error-free communication over IP networks.
+NOTE : Technically, such packet loss is less a flaw in UDP than a consequence of how the Internet is built.
+Most network routers do not perform packet ordering and arrival confirmation by design, because
+doing so would require an unfeasible amount of additional memory. TCP is a way of filling this gap
+when an application requires it.
