@@ -179,7 +179,7 @@ Cmdlet          New-Item                                           7.0.0.0    Mi
 Cmdlet          New-ItemProperty                                   7.0.0.0    Microsoft.PowerShell.Management
 Cmdlet          New-Module                                         7.4.2.500  Microsoft.PowerShell.Core
 Cmdlet          New-ModuleManifest                                 7.4.2.500  Microsoft.PowerShell.Core
-Cmdlet          New-Object                                         7.0.0.0    Microsoft.PowerShell.Utility
+Cmdlet          New-Object                                            7.0.0.0    Microsoft.PowerShell.Utility
 Cmdlet          New-PSDrive                                        7.0.0.0    Microsoft.PowerShell.Management
 Cmdlet          New-PSRoleCapabilityFile                           7.4.2.500  Microsoft.PowerShell.Core
 Cmdlet          New-PSScriptFileInfo                               1.0.4.1    Microsoft.PowerShell.PSResourceGet
